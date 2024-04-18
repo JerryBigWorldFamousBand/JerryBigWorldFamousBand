@@ -16,6 +16,11 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+h1{
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
 @keyframes transition{
   from {background-color: rgba(0,0,0,100%);}
   to {background-color: rgba(0,0,0,0);}
