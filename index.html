@@ -7,57 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="author" content="Maxwell Wakeling">
     <meta name="about" content="Website for Jerry Big's World Famous Band. Check out our stuff. Its good">
-    <link rel="stylesheet" href="https://use.typekit.net/hdq7kym.css">
-<!-- I love you -->
   </head>
-  <body class="teaser">
-    <div class="Fuckyoutransition">
-
+  <body>
+    <div class="container">
+    <img src="images\jerrybigs.PNG" alt="jerry big's logo">
+    <nav>
+      <a href="https://open.spotify.com/artist/7mYjUQN4XBrd94l2oIqwtV?si=gPyshWpZQ1GLrI-S71n0JQ" target="_blank">Spotify</a>
+      <a href="https://jbwfb.bandcamp.com/" target="_blank">BAND CAMP!!!!</a>
+      <a href="https://www.instagram.com/worldfamousband/" target="_blank">Instant Gram.</a>
+      <a href="https://www.youtube.com/channel/UCnttMGCK0AbgF7w4qwi4oMQ"  target="_blank">Youtubes</a>
+      <a href="mailto:jbworldfamousband@gmail.com"  target="_blank">Email us.</a>
+    </nav>
     </div>
-    <h1>THE JERRY BIGS TAPES</h1>
-    <div class=" containerTeaser">
-    <img src="images/jbsticker.png" alt="jerry big's logo">
-    </div>
-    <div class="countdown">
-      <p id="demo"></p>
-      <script>
-      console.log("hey")
-      // Set the date we're counting down to
-      var countDownDate = new Date("Apr 27, 2024 00:00:00").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Make every calculated time two digits
-        var strDays = days.toString().padStart(2, '0');
-        var strHours = hours.toString().padStart(2, '0');
-        var strMinutes = minutes.toString().padStart(2, '0');
-        var strSeconds = seconds.toString().padStart(2, '0');
-
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = strDays + ":" + strHours + ":"
-        + strMinutes + ":" + strSeconds + "";
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-      </script>
-    </div>
+      <footer> <p>&copy;jerry big's world famous band. all rights reserved. bg photo by clay patrick mcbride. logo by jared effman. site by max wakeling.</p> </footer>
 
   </body>
 </html>
