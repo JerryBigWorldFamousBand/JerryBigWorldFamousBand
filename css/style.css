@@ -3,8 +3,8 @@
 body{
   background-color: black;
   box-sizing: border-box;
-  background: url("../images/bg1.jpg") no-repeat fixed center;
-  background-size: cover;
+  background: url("../images/bg2.jpg") fixed right;
+  background-size: cover
   color: white;
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -15,11 +15,6 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-h1{
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 900;
-  font-style: normal;
 }
 @keyframes transition{
   from {background-color: rgba(0,0,0,100%);}
@@ -71,7 +66,8 @@ font-style: normal;
 nav{
   margin:0 auto;
   height:40%;
-  max-width: 25%;
+  padding:.5%;
+  width: 30%;
   display:flex;
   flex-direction:column;
   justify-content: space-around;
@@ -85,12 +81,11 @@ a{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width:100%;
   text-decoration: none;
   font-weight: bold;
   background-color: white;
   color: black;
-  height:15%;
+  height:17%;
   width:100%;
 }
 a:hover{
@@ -101,10 +96,22 @@ a:hover{
 
 footer{
   background-color: black;
+  color: white;
+  text-align: center;
   width: 100%;
 
 }
 @media only screen and (max-width: 800px) {
+  body{
+      background: url("../images/bg2.jpg") no-repeat fixed center;
+  }
+  nav{
+    width:70%;
+  }
+  a{
+    height: 18%;
+
+  }
   img{
     max-width: 50%;
   }
@@ -116,7 +123,17 @@ footer{
   img{
     max-width: 60%;
   }
+  body{
+      background: url("../images/bg2.jpg") no-repeat fixed center;
+  }
   #demo{
     font-size: 8vw;
+  }
+  nav{
+    width:95%;
+    height: 45%;
+  }
+  a{
+    height: 18%;
   }
 }
